@@ -1,1 +1,28 @@
 
+import java.util.Scanner;
+//this is an simple calculator 
+public class Main{
+    public static void main(String[] args){
+          System.out.println("enter 1 to add 2 for substract 3 for multiply");
+          Scanner scanner= new Scanner(System.in);
+             int option =scanner.nextInt();
+             System.out.println("enter number");
+               int num1 =scanner.nextInt();
+              System.out.println("enter another number");
+                int num2=scanner.nextInt();
+        if(option==1){
+            
+            System.out.println(Math.addExact(num1,num2));
+
+        }
+        else if(option==2){
+            System.out.println(Math.subtractExact(num1,num2));
+        }
+        else{
+            System.out.println(Math.multiplyExact(num1,num2));
+        }
+
+    }
+}
+
+
